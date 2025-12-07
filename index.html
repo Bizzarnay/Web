@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFT Marketplace</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="wave wave-1"></div>
+<div class="wave wave-2"></div>
+<div class="wave wave-3"></div>
+
+<div class="circle circle-1"></div>
+<div class="circle circle-2"></div>
+<div class="circle circle-3"></div>
+<div class="circle circle-4"></div>
+
+<div class="line line-1"></div>
+<div class="line line-2"></div>
+<div class="line line-3"></div>
+
+<div class="triangle triangle-1"></div>
+<div class="triangle triangle-2"></div>
+<div class="triangle triangle-3"></div>
+
+<div class="square square-1"></div>
+<div class="square square-2"></div>
+<div class="square square-3"></div>
+<div class="square square-4"></div>
+
+<header class="header">
+  <nav class="nav container">
+    <a href="#" class="logo">
+      <img src="img/logo.png" alt="NFT Marketplace Logo">
+      <span>NFT Marketplace</span>
+    </a>
+
+    <ul class="nav-list" id="navList">
+      <li><a href="#hero">Главная</a></li>
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#gallery">Коллекции</a></li>
+      <li><a href="#artists">Художники</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="btn btn-secondary open-modal">
+        <i class="fas fa-plus"></i> Создать
+      </button>
+      <button class="burger" id="burgerBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="hero">
+  <div class="hero-bg parallax-bg"></div>
+  <div class="hero-content container">
+    <div class="hero-text">
+      <h1>Откройте для себя цифровое искусство и коллекционируйте NFT</h1>
+      <p>Пользовательский интерфейс NFT Marketplace, созданный с помощью Anima для Figma. Собирайте, покупайте и продавайте произведения более чем 20 тысяч художников NFT.</p>
+      <button class="btn btn-primary open-modal">
+        <i class="fas fa-rocket"></i> Начать
+      </button>
+      
+      <div class="hero-stats">
+        <div class="stat">
+          <h3>240k+</h3>
+          <p>Распродажа</p>
+        </div>
+        <div class="stat">
+          <h3>100k+</h3>
+          <p>Аукцион</p>
+        </div>
+        <div class="stat">
+          <h3>240k+</h3>
+          <p>Художники</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-image">
+      <div class="nft-card">
+        <img src="img/Image Placeholder.png" alt="Space Walking NFT">
+        <div class="nft-info">
+          <h4>Space Walking</h4>
+          <div class="artist">
+            <img src="img/artist-avatar.png" alt="Animakid">
+            <span>Animakid</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about container" id="about">
+  <h2>О NFT Marketplace</h2>
+  <p>Откройте для себя революционную платформу, где цифровое искусство сочетается с технологией блокчейна. Наша торговая площадка объединяет художников с коллекционерами по всему миру.</p>
+  <div class="features">
+    <div class="feature">
+      <i class="fas fa-paint-brush"></i>
+      <h3>Создать</h3>
+      <p>Загрузите свои цифровые творения и превратите их в NFT.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-shopping-cart"></i>
+      <h3>Купить</h3>
+      <p>Приобретайте уникальные цифровые активы у талантливых художников.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-chart-line"></i>
+      <h3>Продать</h3>
+      <p>Разместите свои NFT и обратитесь к коллекционерам со всего мира</p>
+    </div>
+  </div>
+</section>
+
+<section class="gallery container" id="gallery">
+  <div class="section-header">
+    <h2>Популярные коллекции</h2>
+    <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+  </div>
+
+  <div class="slider-container">
+    <div class="slider-wrapper">
+      <div class="slider-track" id="sliderTrack">
+        <div class="slide">
+          <img src="img/nft1.png" alt="NFT Collection 1">
+          <div class="slide-info">
+            <h4>Digital Dreams</h4>
+            <p>By CryptoArtist</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/nft2.png" alt="NFT Collection 2">
+          <div class="slide-info">
+            <h4>Cyber Cities</h4>
+            <p>By NeonDesigner</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/nft3.png" alt="NFT Collection 3">
+          <div class="slide-info">
+            <h4>Abstract Universe</h4>
+            <p>By ArtVanguard</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/nft4.png" alt="NFT Collection 4">
+          <div class="slide-info">
+            <h4>Future Beings</h4>
+            <p>By DigitalPioneer</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/nft5.png" alt="NFT Collection 5">
+          <div class="slide-info">
+            <h4>Cosmic Patterns</h4>
+            <p>By SpaceCreator</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/nft1.png" alt="NFT Collection 6">
+          <div class="slide-info">
+            <h4>Neon Dreams</h4>
+            <p>By PixelMaster</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="img/nft2.png" alt="NFT Collection 7">
+          <div class="slide-info">
+            <h4>Virtual Reality</h4>
+            <p>By TechArtist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <button class="slider-btn left" id="leftBtn">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    
+    <button class="slider-btn right" id="rightBtn">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+</section>
+
+<section class="artists container" id="artists">
+  <div class="section-header">
+    <h2>Топ хужожников</h2>
+    <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+  </div>
+  
+  <div class="artists-grid">
+    <div class="artist-card">
+      <img src="img/artist1.png" alt="Artist 1">
+      <h4>Animakid</h4>
+      <p>Total Sales: 34.53 ETH</p>
+    </div>
+    <div class="artist-card">
+      <img src="img/artist2.png" alt="Artist 2">
+      <h4>DigitalDreamer</h4>
+      <p>Total Sales: 28.15 ETH</p>
+    </div>
+    <div class="artist-card">
+      <img src="img/artist3.png" alt="Artist 3">
+      <h4>CyberArtist</h4>
+      <p>Total Sales: 22.47 ETH</p>
+    </div>
+    <div class="artist-card">
+      <img src="img/artist4.png" alt="Artist 4">
+      <h4>NeonMaster</h4>
+      <p>Total Sales: 18.92 ETH</p>
+    </div>
+  </div>
+</section>
+
+<section class="subscribe container" id="contact">
+  <h2>Присоединиться к сообществу</h2>
+  <p>Подпишитесь, чтобы получать последние новости о новых выпусках и избранных исполнителях.</p>
+  <form class="subscribe-form">
+    <input type="email" placeholder="Enter your email address" required>
+    <button type="submit" class="btn btn-primary">Подписаться сейчас</button>
+  </form>
+</section>
+</main>
+
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-info">
+        <a href="#" class="logo">
+          <img src="img/logo.png" alt="NFT Marketplace Logo">
+          <span>NFT Marketplace</span>
+        </a>
+        <p>Первый и крупнейший в мире цифровой рынок для криптографических предметов коллекционирования и невзаимозаменяемых токенов (NFT)..</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <div class="link-col">
+          <h4>Marketplace</h4>
+          <a href="#">All NFTs</a>
+          <a href="#">New</a>
+          <a href="#">Art</a>
+          <a href="#">Sports</a>
+        </div>
+        <div class="link-col">
+          <h4>Resources</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Partners</a>
+          <a href="#">Blog</a>
+          <a href="#">Newsletter</a>
+        </div>
+        <div class="link-col">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Support</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2025 NFT Marketplace. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+<div class="modal" id="modal">
+  <div class="modal-window">
+    <button class="modal-close" id="modalClose">×</button>
+    <h2>Создать свое NFT</h2>
+    
+
+    <div class="loading-spinner" id="loadingSpinner" style="display: none;">
+      <div class="spinner"></div>
+      <p>Создать NFT...</p>
+    </div>
+    
+
+    <div class="success-message" id="successMessage" style="display: none;">
+      <div class="success-icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <h3>NFT успешно создан!</h3>
+      <p>Твой NFT "<span id="createdNftName">Digital Art</span>" был успешно создан и теперь доступен на торговой площадке.</p>
+      <div class="success-details">
+        <p><strong>Цена:</strong> <span id="createdNftPrice">0.1 ETH</span></p>
+        <p><strong>Категория:</strong> <span id="createdNftCategory">Art</span></p>
+        <p><strong>Отчисления владельцу:</strong> <span id="createdNftRoyalty">10%</span></p>
+        <p><strong>Описание:</strong> <span id="createdNftDescription">Digital artwork created by you</span></p>
+      </div>
+      <div class="success-actions">
+        <button class="btn btn-primary" onclick="viewNftDetails()">
+          <i class="fas fa-eye"></i> Увидеть NFT
+        </button>
+        <button class="btn btn-secondary" onclick="createAnotherNft()">
+          <i class="fas fa-plus"></i> Сделать новый
+        </button>
+      </div>
+    </div>
+    
+
+    <form class="modal-form" id="nftForm">
+      <label>
+        <div class="label-text">NFT имя *</div>
+        <input type="text" name="nft_name" placeholder="Enter NFT name (e.g., Digital Dreams)" required id="nftName">
+      </label>
+      
+      <label>
+        <div class="label-text">Описание *</div>
+        <textarea name="description" placeholder="Describe your NFT in detail. What makes it unique? What inspired you?" rows="4" required id="nftDescription"></textarea>
+        <small class="char-count">Персонажи: <span id="charCount">0</span>/500</small>
+      </label>
+      
+      <label>
+        <div class="label-text">Цена (ETH) *</div>
+        <input type="number" name="price" step="0.01" placeholder="0.01" min="0.01" required id="nftPrice">
+        <small>Минимальная цена: 0.01 ETH</small>
+      </label>
+      
+      <label>
+        <div class="label-text">Категория *</div>
+        <select name="category" required id="nftCategory">
+          <option value="">Выбрать категорию</option>
+          <option value="art">🎨 Art</option>
+          <option value="collectibles">🏆 Collectibles</option>
+          <option value="music">🎵 Music</option>
+          <option value="photography">📸 Photography</option>
+          <option value="virtual_worlds">🌐 Virtual Worlds</option>
+          <option value="trading_cards">🃏 Trading Cards</option>
+          <option value="utility">🔧 Utility</option>
+          <option value="sports">⚽ Sports</option>
+        </select>
+      </label>
+      
+      <label>
+        <div class="label-text">Процент</div>
+        <input type="number" name="royalty" placeholder="10" min="0" max="50" step="0.1" id="nftRoyalty">
+        <small>Процент, который вы получите от будущих продаж (0-50%).</small>
+      </label>
+      
+      <label class="file-upload-label">
+        <div class="label-text">Загрузить файл *</div>
+        <div class="file-upload-wrapper">
+          <input type="file" name="nft_file" accept="image/*,video/*,.glb,.gltf" required id="nftFile" class="file-input">
+          <div class="file-upload-placeholder" id="filePlaceholder">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <span>Нажмите, чтобы загрузить или перетащите</span>
+            <small>Поддерживаемые форматы: JPG, PNG, GIF, MP4, GLB, GLTF (макс. 100 МБ).</small>
+          </div>
+        </div>
+        <div class="file-preview" id="filePreview" style="display: none;">
+          <img id="previewImage" src="" alt="Preview">
+          <div class="file-info">
+            <span id="fileName"></span>
+            <button type="button" class="remove-file" onclick="removeFile()">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+      </label>
+      
+      <div class="form-buttons">
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-check"></i> Создать NFT
+        </button>
+        <button type="button" class="btn btn-secondary modal-close-btn">
+          <i class="fas fa-times"></i> Отменить
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
